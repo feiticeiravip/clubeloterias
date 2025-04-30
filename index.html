@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clube Loterias - Palpites para Jogo do Bicho, resultados e acesso às melhores bancas como Feiticeira VIP, Águia Oficial, Loto Cowboy, Troia Online, Águia Prime, Cravo da Sorte, Pote de Ouro e Acertos Club.">
+  <meta name="keywords" content="jogo do bicho, palpites, bancas, feiticeira vip, águia oficial, loto cowboy, troia online, águia prime, cravo da sorte, pote de ouro, acertos club, loterias, apostas online">
+  <meta name="author" content="Clube Loterias">
+  <meta name="robots" content="index, follow">
+  <title>Clube Loterias - Feiticeira Vip - Águia Oficial - Loto Cowboy - Acertos Club - Cravo da Sorte</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body { background: linear-gradient(135deg, #1a1a2e, #16213e); color: #fff; line-height: 1.6; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+    header { position: relative; text-align: center; padding: 20px 0; margin-bottom: 10px; }
+    .categories { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin: 40px 0; width: 100%; }
+    .category-card { background: rgba(255,255,255,0.1); border-radius: 15px; padding: 0; text-align: center; transition: transform .3s, box-shadow .3s; height: 100%; display: flex; flex-direction: column; max-width: none; }
+    .category-card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+    .category-card img { width: 100%; height: 200px; object-fit: cover; border-top-left-radius: 15px; border-top-right-radius: 15px; }
+    .category-card .content { padding: 10px; flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 10px; }
+    .category-card h2 { font-size: 1.5em; margin: 0; color: #ffd700; }
+    .category-card a { display: inline-block; background: #ffd700; color: #1a1a2e; padding: 10px 20px; border-radius: 10px; text-decoration: none; font-weight: bold; transition: transform .3s; }
+    .category-card a:hover { transform: scale(1.05); }
+    section[id], div[id] { scroll-margin-top: 80px; }
+    .bet-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    .bet-table th, .bet-table td { border: 1px solid #ffd700; padding: 10px; text-align: center; }
+    .bet-table th { background: #1a1a2e; color: #ffd700; }
+    .bet-table td { background: rgba(255,255,255,0.1); }
+    footer { text-align: center; padding: 20px 0; }
+    @media (max-width: 768px) {
+      .categories { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+      .category-card img { height: 120px; width: 100%; object-fit: cover; }
+      .category-card .content { padding: 8px; gap: 5px; }
+      .category-card h2 { font-size: 1.2em; }
+      .bet-table th, .bet-table td { padding: 8px; font-size: 0.9em; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="text-3xl font-bold" style="color: #ffd700;">Clube Loterias</h1>
+      <p class="mt-2">Os melhores palpites e bancas para o Jogo do Bicho</p>
+    </div>
+  </header>
+
+  <section class="container">
+    <h2 class="text-2xl font-bold text-center mb-6" style="color: #ffd700;">Nossas Bancas</h2>
+    <p class="text-center mb-4">Acesse as melhores bancas do Jogo do Bicho, incluindo Feiticeira VIP, Águia Oficial, Loto Cowboy e Troia Online.</p>
+    <div class="categories">
+      <div class="category-card">
+        <img src="feiticeira.webp" alt="Feiticeira VIP">
+        <div class="content">
+          <h2>Feiticeira VIP</h2>
+          <a href="https://feiticeiravip.club/" target="_blank">Acesse a Banca Agora</a>
+        </div>
+      </div>
+      <div class="category-card">
+        <img src="aguia.webp" alt="Águia Oficial">
+        <div class="content">
+          <h2>Águia Oficial</h2>
+          <a href="https://aguiaoficial.club/" target="_blank">Acesse a Banca Agora</a>
+        </div>
+      </div>
+      <div class="category-card">
+        <img src="lotocowboy.webp" alt="Loto Cowboy">
+        <div class="content">
+          <h2>Loto Cowboy</h2>
+          <a href="https://app.sistemabarao.com.br/loto-cowboy?p=SPMqwc1N" target="_blank">Acesse a Banca Agora</a>
+        </div>
+      </div>
+      <div class="category-card">
+        <img src="troia.webp" alt="Troia Online">
+        <div class="content">
+          <h2>Troia Online</h2>
+          <a href="https://app.troiaonline.vip/pr/HTWzNhJP" target="_blank">Acesse a Banca Agora</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container py-8" style="background: rgba(255,255,255,0.1); border-radius: 15px;">
+    <h2 class="text-2xl font-bold text-center mb-6" style="color: #ffd700;">Palpites do Jogo do Bicho</h2>
+    <p class="text-center mb-4">Selecione uma banca para ver os palpites para o próximo horário!</p>
+    <div class="flex justify-center mb-6">
+      <select id="bancaSelect" class="border rounded p-2" style="background: #1a1a2e; color: #fff;">
+        <option value="">Selecione uma banca</option>
+        <option value="PT Rio">PT Rio</option>
+        <option value="Look GO">Look GO</option>
+        <option value="Nacional">Nacional</option>
+        <option value="Maluca BA">Maluca BA</option>
+        <option value="Lotep">Lotep</option>
+      </select>
+    </div>
+    <div id="palpites" class="text-center"></div>
+  </section>
+
+  <section class="container py-8" style="background: rgba(255,255,255,0.1); border-radius: 15px;">
+    <h2 class="text-2xl font-bold text-center mb-6" style="color: #ffd700;">Puxadas do Jogo do Bicho</h2>
+    <p class="text-center mb-4">Escolha um animal e veja as puxadas relacionadas para suas apostas!</p>
+    <div class="flex justify-center mb-4">
+      <select id="animalSelect" class="border rounded p-2" style="background: #1a1a2e; color: #fff;">
+        <option value="">Selecione um animal</option>
+      </select>
+      <button id="verPuxada" class="bg-blue-500 text-white py-2 px-4 rounded ml-4 hover:bg-blue-600 hidden">Ver Puxada</button>
+    </div>
+    <div id="puxadaResult" class="text-center"></div>
+  </section>
+
+  <section class="container py-8" style="background: rgba(255,255,255,0.1); border-radius: 15px;" id="bet-types">
+    <h2 class="text-2xl font-bold text-center mb-6" style="color: #ffd700;">Tipos de Aposta e Valores</h2>
+    <p class="text-center mb-4">Cotações para Jogo do Bicho (Loteria).</p>
+    <table class="bet-table">
+      <thead>
+        <tr><th>Tipo de Aposta</th><th>Valor da Cotação</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Unidade</td><td>R$ 8,00</td></tr>
+        <tr><td>Grupo</td><td>R$ 20,00</td></tr>
+        <tr><td>Dezena</td><td>R$ 80,00</td></tr>
+        <tr><td>Centena</td><td>R$ 800,00</td></tr>
+        <tr><td>Milhar</td><td>R$ 8.000,00</td></tr>
+        <tr><td>Duque GP</td><td>R$ 180,00</td></tr>
+        <tr><td>Terno GP</td><td>R$ 1.500,00</td></tr>
+        <tr><td>Quadra GP</td><td>R$ 1.000,00</td></tr>
+        <tr><td>Quina GP (8/5)</td><td>R$ 1.000,00</td></tr>
+        <tr><td>Sena GP (10/6)</td><td>R$ 1.000,00</td></tr>
+        <tr><td>Duque Dez</td><td>R$ 300,00</td></tr>
+        <tr><td>Terno Dez Seco</td><td>R$ 10.000,00</td></tr>
+        <tr><td>Terno Dez</td><td>R$ 5.000,00</td></tr>
+        <tr><td>Palpitação</td><td>R$ 800,00</td></tr>
+        <tr><td>Passe Vai</td><td>R$ 90,00</td></tr>
+        <tr><td>Passe Vai Vem</td><td>R$ 45,00</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer style="background: #1a1a2e; color: #fff;">
+    <div class="container text-center">
+      <p>© 2025 Clube Loterias. Todos os direitos reservados.</p>
+      <p>Banca segura e rentável - Águia Oficial - Feiticeira Vip - Loto Cowboy - Troia Online - jogo do bicho!</p>
+    </div>
+  </footer>
+
+  <script>
+    const animals = [
+      { name: 'Avestruz', emoji: '🦢', group: 1, tens: ['01', '02', '03', '04'] },
+      { name: 'Águia', emoji: '🦅', group: 2, tens: ['05', '06', '07', '08'] },
+      { name: 'Burro', emoji: '🦙', group: 3, tens: ['09', '10', '11', '12'] },
+      { name: 'Borboleta', emoji: '🦋', group: 4, tens: ['13', '14', '15', '16'] },
+      { name: 'Cachorro', emoji: '🐶', group: 5, tens: ['17', '18', '19', '20'] },
+      { name: 'Cabra', emoji: '🐐', group: 6, tens: ['21', '22', '23', '24'] },
+      { name: 'Carneiro', emoji: '🐏', group: 7, tens: ['25', '26', '27', '28'] },
+      { name: 'Camelo', emoji: '🐪', group: 8, tens: ['29', '30', '31', '32'] },
+      { name: 'Cobra', emoji: '🐍', group: 9, tens: ['33', '34', '35', '36'] },
+      { name: 'Coelho', emoji: '🐰', group: 10, tens: ['37', '38', '39', '40'] },
+      { name: 'Cavalo', emoji: '🐎', group: 11, tens: ['41', '42', '43', '44'] },
+      { name: 'Elefante', emoji: '🐘', group: 12, tens: ['45', '46', '47', '48'] },
+      { name: 'Galo', emoji: '🐓', group: 13, tens: ['49', '50', '51', '52'] },
+      { name: 'Gato', emoji: '🐱', group: 14, tens: ['53', '54', '55', '56'] },
+      { name: 'Jacaré', emoji: '🐊', group: 15, tens: ['57', '58', '59', '60'] },
+      { name: 'Leão', emoji: '🦁', group: 16, tens: ['61', '62', '63', '64'] },
+      { name: 'Macaco', emoji: '🐒', group: 17, tens: ['65', '66', '67', '68'] },
+      { name: 'Porco', emoji: '🐷', group: 18, tens: ['69', '70', '71', '72'] },
+      { name: 'Pavão', emoji: '🦚', group: 19, tens: ['73', '74', '75', '76'] },
+      { name: 'Peru', emoji: '🦃', group: 20, tens: ['77', '78', '79', '80'] },
+      { name: 'Touro', emoji: '🐂', group: 21, tens: ['81', '82', '83', '84'] },
+      { name: 'Tigre', emoji: '🐅', group: 22, tens: ['85', '86', '87', '88'] },
+      { name: 'Urso', emoji: '🐻', group: 23, tens: ['89', '90', '91', '92'] },
+      { name: 'Veado', emoji: '🦌', group: 24, tens: ['93', '94', '95', '96'] },
+      { name: 'Vaca', emoji: '🐄', group: 25, tens: ['97', '98', '99', '00'] }
+    ];
+
+    const bancas = {
+      'PT Rio': {
+        schedules: {
+          'Domingo': ['09:30', '11:30', '14:30', '16:30'],
+          'Segunda': ['09:30', '11:30', '14:30', '16:30', '18:30', '21:30'],
+          'Terça': ['09:30', '11:30', '14:30', '16:30', '18:30', '21:30'],
+          'Quarta': ['09:30', '11:30', '14:30', '16:30', '19:00', '21:30'],
+          'Quinta': ['09:30', '11:30', '14:30', '16:30', '18:30', '21:30'],
+          'Sexta': ['09:30', '11:30', '14:30', '16:30', '18:30', '21:30'],
+          'Sábado': ['09:30', '11:30', '14:30', '16:30', '19:00', '21:30']
+        }
+      },
+      'Look GO': {
+        schedules: {
+          'Domingo': ['09:00', '11:00', '14:00', '16:00', '18:00', '21:00'],
+          'Segunda': ['09:00', '11:00', '14:00', '16:00', '18:00', '21:00'],
+          'Terça': ['09:00', '11:00', '14:00', '16:00', '18:00', '21:00'],
+          'Quarta': ['09:00', '11:00', '14:00', '16:00', '18:00', '19:00', '21:00'],
+          'Quinta': ['09:00', '11:00', '14:00', '16:00', '18:00', '21:00'],
+          'Sexta': ['09:00', '11:00', '14:00', '16:00', '18:00', '21:00'],
+          'Sábado': ['09:00', '11:00', '14:00', '16:00', '18:00', '19:00', '21:00']
+        }
+      },
+      'Nacional': {
+        schedules: {
+          'Domingo': ['02:00', '08:00', '10:00', '12:00', '15:00', '17:00', '20:00', '23:00'],
+          'Segunda': ['02:00', '08:00', '10:00', '12:00', '15:00', '17:00', '20:00', '23:00'],
+          'Terça': ['02:00', '08:00', '10:00', '12:00', '15:00', '17:00', '20:00', '23:00'],
+          'Quarta': ['02:00', '08:00', '10:00', '12:00', '15:00', '17:00', '20:00', '23:00'],
+          'Quinta': ['02:00', '08:00', '10:00', '12:00', '15:00', '17:00', '20:00', '23:00'],
+          'Sexta': ['02:00', '08:00', '10:00', '12:00', '15:00', '17:00', '20:00', '23:00'],
+          'Sábado': ['02:00', '08:00', '10:00', '12:00', '15:00', '17:00', '20:00', '23:00']
+        }
+      },
+      'Maluca BA': {
+        schedules: {
+          'Domingo': ['10:00', '12:00', '15:00'],
+          'Segunda': ['10:00', '12:00', '15:00', '19:00', '21:00'],
+          'Terça': ['10:00', '12:00', '15:00', '19:00', '21:00'],
+          'Quarta': ['10:00', '12:00', '15:00', '19:00', '21:00'],
+          'Quinta': ['10:00', '12:00', '15:00', '19:00', '21:00'],
+          'Sexta': ['10:00', '12:00', '15:00', '19:00', '21:00'],
+          'Sábado': ['10:00', '12:00', '15:00', '19:00', '21:00']
+        }
+      },
+      'Lotep': {
+        schedules: {
+          'Domingo': ['10:45', '12:45'],
+          'Segunda': ['10:45', '12:45', '15:45', '18:00'],
+          'Terça': ['10:45', '12:45', '15:45', '18:00'],
+          'Quarta': ['10:45', '12:45', '15:45', '18:00', '19:00'],
+          'Quinta': ['10:45', '12:45', '15:45', '18:00'],
+          'Sexta': ['10:45', '12:45', '15:45', '18:00'],
+          'Sábado': ['10:45', '12:45', '15:45', '18:00', '19:00']
+        }
+      }
+    };
+
+    const puxadas = {
+      'Avestruz': ['Pavão', 'Águia', 'Galo'],
+      'Águia': ['Avestruz', 'Galo', 'Pavão'],
+      'Burro': ['Cavalo', 'Vaca', 'Touro'],
+      'Borboleta': ['Gato', 'Cobra', 'Coelho'],
+      'Cachorro': ['Galo', 'Camelo', 'Macaco'],
+      'Cabra': ['Vaca', 'Carneiro', 'Touro'],
+      'Carneiro': ['Cabra', 'Vaca', 'Touro'],
+      'Camelo': ['Cachorro', 'Urso', 'Avestruz'],
+      'Cobra': ['Borboleta', 'Jacaré', 'Gato'],
+      'Coelho': ['Borboleta', 'Gato', 'Cobra'],
+      'Cavalo': ['Burro', 'Vaca', 'Carneiro'],
+      'Elefante': ['Urso', 'Touro', 'Leão'],
+      'Galo': ['Avestruz', 'Águia', 'Pavão'],
+      'Gato': ['Borboleta', 'Cobra', 'Coelho'],
+      'Jacaré': ['Cobra', 'Porco', 'Borboleta'],
+      'Leão': ['Elefante', 'Tigre', 'Urso'],
+      'Macaco': ['Cachorro', 'Gato', 'Leão'],
+      'Porco': ['Jacaré', 'Vaca', 'Cabra'],
+      'Pavão': ['Avestruz', 'Galo', 'Águia'],
+      'Peru': ['Galo', 'Pavão', 'Avestruz'],
+      'Touro': ['Carneiro', 'Vaca', 'Cabra'],
+      'Tigre': ['Leão', 'Porco', 'Elefante'],
+      'Urso': ['Camelo', 'Elefante', 'Leão'],
+      'Veado': ['Coelho', 'Borboleta', 'Gato'],
+      'Vaca': ['Cabra', 'Carneiro', 'Touro']
+    };
+
+    function generateMilhar() {
+      return Math.floor(Math.random() * 10000).toString().padStart(4, '0');
+    }
+
+    function getAnimalByMilhar(milhar) {
+      const tens = milhar.slice(-2);
+      return animals.find(animal => animal.tens.includes(tens)) || animals[0];
+    }
+
+    function getNextDrawTime(banca, now) {
+      const days = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
+      const today = days[now.getDay()];
+      const schedules = bancas[banca].schedules[today];
+      if (!schedules) return null;
+
+      const nowTime = `${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}`;
+      const nextTime = schedules.find(time => time > nowTime) || schedules[0];
+      let nextDate = new Date(now);
+
+      if (!schedules.find(time => time > nowTime)) {
+        nextDate.setDate(now.getDate() + 1);
+      }
+
+      const [hours, minutes] = nextTime.split(':');
+      nextDate.setHours(parseInt(hours), parseInt(minutes), 0, 0);
+      return { time: nextTime, date: nextDate };
+    }
+
+    function generatePalpites(banca, drawTime) {
+      const key = `palpites_${banca}_${drawTime}`;
+      const stored = localStorage.getItem(key);
+      if (stored) return JSON.parse(stored);
+
+      const palpites = [];
+      for (let i = 0; i < 10; i++) {
+        const milhar = generateMilhar();
+        const animal = getAnimalByMilhar(milhar);
+        palpites.push({ milhar, animal: `${animal.emoji} ${animal.name}` });
+      }
+
+      localStorage.setItem(key, JSON.stringify(palpites));
+      return palpites;
+    }
+
+    function clearExpiredPalpites() {
+      Object.keys(localStorage).forEach(key => {
+        if (key.startsWith('palpites_')) {
+          const [, banca, time] = key.split('_');
+          const now = new Date();
+          const nextDraw = getNextDrawTime(banca, now);
+          if (nextDraw && new Date(nextDraw.date) < now) {
+            localStorage.removeItem(key);
+          }
+        }
+      });
+    }
+
+    function shareOnWhatsApp(banca, drawTime, palpites) {
+      const message = `Palpites para ${banca} - ${drawTime}:\n${palpites.map(p => `${p.milhar} - ${p.animal}`).join('\n')}\n\nJOGUE AGORA PELAS BANCAS:\nFeiticeira VIP: https://feiticeiravip.club/\nÁguia Oficial: https://aguiaoficial.club/\nLoto Cowboy: https://app.sistemabarao.com.br/loto-cowboy?p=SPMqwc1N\nTroia Online: https://app.troiaonline.vip/pr/HTWzNhJP`;
+      const encodedMessage = encodeURIComponent(message);
+      window.open(`https://api.whatsapp.com/send?text=${encodedMessage}`, '_blank');
+    }
+
+    function displayPalpites() {
+      const bancaSelect = document.getElementById('bancaSelect');
+      const palpitesDiv = document.getElementById('palpites');
+      palpitesDiv.innerHTML = '';
+      clearExpiredPalpites();
+
+      const selectedBanca = bancaSelect.value;
+      if (!selectedBanca) {
+        palpitesDiv.innerHTML = '<p class="text-red-500">Por favor, selecione uma banca para ver os palpites.</p>';
+        return;
+      }
+
+      const now = new Date();
+      const nextDraw = getNextDrawTime(selectedBanca, now);
+      if (!nextDraw) {
+        palpitesDiv.innerHTML = '<p class="text-gray-500">Nenhum horário disponível para hoje.</p>';
+        return;
+      }
+
+      const palpites = generatePalpites(selectedBanca, nextDraw.time);
+      palpitesDiv.innerHTML = `
+        <div class="p-4 rounded-lg" style="background: rgba(255,255,255,0.1);">
+          <h3 class="text-lg font-semibold" style="color: #ffd700;">${selectedBanca} - ${nextDraw.time}</h3>
+          <ul class="mt-2 list-disc pl-5 mx-auto max-w-md">
+            ${palpites.map(p => `<li>${p.milhar} - ${p.animal}</li>`).join('')}
+          </ul>
+          <button id="shareWhatsApp" class="mt-4 bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">Compartilhar no WhatsApp</button>
+        </div>
+      `;
+
+      document.getElementById('shareWhatsApp').addEventListener('click', () => {
+        shareOnWhatsApp(selectedBanca, nextDraw.time, palpites);
+      });
+    }
+
+    function populateAnimalSelect() {
+      const select = document.getElementById('animalSelect');
+      animals.forEach(animal => {
+        const option = document.createElement('option');
+        option.value = animal.name;
+        option.textContent = `${animal.emoji} ${animal.name}`;
+        select.appendChild(option);
+      });
+    }
+
+    function handlePuxada() {
+      const select = document.getElementById('animalSelect');
+      const verPuxada = document.getElementById('verPuxada');
+      const puxadaResult = document.getElementById('puxadaResult');
+
+      select.addEventListener('change', () => {
+        verPuxada.classList.toggle('hidden', !select.value);
+        puxadaResult.innerHTML = '';
+      });
+
+      verPuxada.addEventListener('click', () => {
+        const animal = select.value;
+        if (!animal) return;
+
+        const pulls = puxadas[animal] || [];
+        puxadaResult.innerHTML = `
+          <div class="p-4 rounded-lg" style="background: rgba(255,255,255,0.1);">
+            <p class="font-semibold" style="color: #ffd700;">Puxadas para ${animal}:</p>
+            <ul class="list-disc pl-5 mt-2 mx-auto max-w-md">
+              ${pulls.map(pull => `<li>${animals.find(a => a.name === pull).emoji} ${pull}</li>`).join('')}
+            </ul>
+          </div>
+        `;
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      populateAnimalSelect();
+      handlePuxada();
+      document.getElementById('bancaSelect').addEventListener('change', displayPalpites);
+      setInterval(displayPalpites, 60000); // Refresh every minute
+    });
+  </script>
+</body>
+</html>
