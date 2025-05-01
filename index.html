@@ -317,7 +317,7 @@
     }
 
     function shareOnWhatsApp(banca, drawTime, palpites) {
-      const message = `Palpites para ${banca} - ${drawTime}:\n${palpites.map(p => `${p.milhar} - ${p.animal}`).join('\n')}\n\nJOGUE AGORA PELAS BANCAS:\nFeiticeira VIP: https://feiticeiravip.club/\nÁguia Oficial: https://aguiaoficial.club/\nLoto Cowboy: https://app.sistemabarao.com.br/loto-cowboy?p=SPMqwc1N\nTroia Online: https://app.troiaonline.vip/pr/HTWzNhJP`;
+      const message = `Palpites para ${banca} - ${drawTime}:\n${palpites.map(p => `${p.milhar} - ${p.animal}`).join('\n')}\n\nJOGUE AGORA PELAS BANCAS:\nFeiticeira VIP: https://feiticeiravip.club/\nÁguia Oficial: https://aguiaoficial.club/\nLoto Cowboy: https://app.sistemabarao.com.br/loto-cowboy?p=SPMqwc1N\nTroia Online: https://app.troiaonline.vip/pr/HTWzNhJP\nEntre no meu grupo: https://chat.whatsapp.com/L4tf40onhBy1riWW8pqkw4`;
       const encodedMessage = encodeURIComponent(message);
       window.open(`https://api.whatsapp.com/send?text=${encodedMessage}`, '_blank');
     }
